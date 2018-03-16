@@ -1,0 +1,24 @@
+/*/**/target
+
+# Eclipse Project files
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA Project files
+.idea
+*.iml
+*.ipr
+*.iws
+
+*.class
+*.log
+*.bak
+*.tem
+*.temp
+
+bin/
+gen/
+.DS_Store
+Thumbs.db
+README.md

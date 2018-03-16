@@ -1,0 +1,23 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:application owner="lyncc" name="bazinga-app" />
+    <!--zookeeper注册中心 -->
+    <dubbo:registry protocol="zookeeper" address="192.168.1.117:2181,192.168.1.117:2182,192.168.1.117:2183"/>
+
+    <dubbo:protocol name ="dubbo" port="20880" />
+    <!-- 发布这个服务 -->
+    <dubbo:service protocol="dubbo" cluster="failover" retries="2" timeout="4000" connections="100" interface ="common.demo.IUserService" ref="userService" />
+
+
+
+    <!-- 和本地bean一样实现服务 -->
+    <bean id="userService" class="common.demo.UserServiceImpl" />
+
+</beans>
