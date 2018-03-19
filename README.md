@@ -30,5 +30,5 @@
 ### dubbox 使用
 ### kafka使用
 ### zookeeper 使用
-1. *zookeeper* 基本操作
-2. 基于 *zookeeper* 实现分布式事务锁 的使用示例
+1. zookeeper 基本操作
+2. 基于 zookeeper 实现分布式事务锁 的使用示例
