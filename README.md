@@ -19,10 +19,10 @@
         `Condition 实现`
     - 多线程同时开始实现   `common.demo.cooperation.fire.Main`
     - 多次集合点实现
-        自实现 `common.demo.cooperation.barrier.Main` 实现集合点
+        自实现 `common.demo.cooperation.barrier.Main` 实现,集合点
         `CyclicBarrier` 实现集合点
     - 一次集合点实现
-        自实现 `common.demo.cooperation.latch.MyLatch` 实现一次集合点
+        自实现 `common.demo.cooperation.latch.MyLatch` 实现,一次集合点
         `CountDownLatch` 实现一次集合点
     - 条件（信号量）限制
         `Semaphore` 模拟实现系统最多登录用户数
