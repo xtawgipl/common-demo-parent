@@ -1,0 +1,21 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+    <groupId>demo.common.spring</groupId>
+    <artifactId>common-springx-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>common-springx-parent</name>
+    <description>spring 相关</description>
+
+    <parent>
+        <groupId>demo.common</groupId>
+        <artifactId>common-demo-parent</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+	
+	<modules>
+        <module>common-spring-plugin</module>
+	</modules>
+
+</project>
