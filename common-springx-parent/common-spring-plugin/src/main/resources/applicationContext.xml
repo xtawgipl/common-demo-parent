@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:rpc="http://www.springframework.org/schema/rpc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+        http://www.springframework.org/schema/rpc http://www.springframework.org/schema/rpc/rpc.xsd">
+
+    <context:annotation-config/>
+    <context:component-scan base-package="common.spring.xml.extend"/>
+
+
+    <rpc:service id="rpcService" ref="helloService" interface="common.spring.xml.extend.testservice.IEchoService" timeout="5000" retries="1"></rpc:service>
+
+    <bean id="echoService" class="common.spring.xml.extend.testservice.EchoServiceImpl" />
+</beans>
