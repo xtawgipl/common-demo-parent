@@ -17,6 +17,9 @@
 		<kafak.version>0.9.0.1</kafak.version>
 		<dubbo.version>2.6.0</dubbo.version>
 		<jedis.version>2.9.0</jedis.version>
+		<springboot.version>1.5.4.RELEASE</springboot.version>
+		<lombok.version>1.18.0</lombok.version>
+		<fastjson.version>1.2.32</fastjson.version>
 	</properties>
 
 	<modules>
@@ -28,6 +31,7 @@
 		<module>common-thread-demo</module>
 		<module>common-zookeeper-demo</module>
 		<module>common-redis-demo</module>
+		<module>common-springx-parent</module>
 	</modules>
 
 	<dependencyManagement>
@@ -61,6 +65,32 @@
 				<groupId>redis.clients</groupId>
 				<artifactId>jedis</artifactId>
 				<version>${jedis.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter</artifactId>
+				<version>${springboot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+				<version>${springboot.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>${fastjson.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-test</artifactId>
+				<version>${springboot.version}</version>
+				<scope>test</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
