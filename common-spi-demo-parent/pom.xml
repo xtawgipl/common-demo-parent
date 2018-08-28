@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>common-demo-parent</artifactId>
+        <groupId>demo.common</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <modules>
+        <module>common-spi-api</module>
+        <module>common-spi-support-mysql</module>
+        <module>common-spi-test</module>
+        <module>common-spi-support-oracle</module>
+    </modules>
+    <artifactId>common-spi-demo-parent</artifactId>
+
+    <name>common-spi-demo-parent</name>
+
+</project>

@@ -1,6 +1,8 @@
 # common-demo
 常用JDK API及工具使用demo
 ## JDK API
+### spi
+    java spi规范使用
 ### jmx使用
 ### fork/join 使用
 ### nio-reactor 实现
@@ -30,6 +32,8 @@
 ### dubbox 使用
 ### kafka使用
 ### zookeeper 使用
+    1. zookeeper 基本操作
+    2. 基于 zookeeper 实现分布式事务锁 的使用示例
 ### spring
-1. zookeeper 基本操作
-2. 基于 zookeeper 实现分布式事务锁 的使用示例
+    spring spi 使用
+    基于spring spi实现配置扩展————实现dubbo配置

@@ -32,6 +32,7 @@
 		<module>common-zookeeper-demo</module>
 		<module>common-redis-demo</module>
 		<module>common-springx-parent</module>
+		<module>common-spi-demo-parent</module>
 	</modules>
 
 	<dependencyManagement>
